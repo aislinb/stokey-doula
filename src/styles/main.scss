@@ -1,0 +1,151 @@
+
+$brand-green: #3bb9b2;
+$background: white;
+
+body {
+  background-color: $background;
+  color: black;
+  font: 16px jura sans-serif;
+}
+
+nav {
+  
+  color: $brand-green;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+  }  
+
+}
+
+.section {
+  width: 100%;
+
+  .container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  color: $brand-green;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Montserrat,sans-serif;
+}
+
+.subheading {
+  color: $brand-green;
+  text-transform: uppercase;
+}
+// HOMEPAGE 
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+  
+  img {
+    width: 50%;
+  }
+}
+
+//  NEW NAVBAR 
+
+.navbar {
+  height: 70px;
+  // background-color: $brand-green;
+  color: $brand-green;
+  // max-width: 1000px;
+  margin: auto;
+  box-shadow: 1px 1px blur;
+  
+
+  .is-active {
+    margin-left: 20px;
+  }
+
+  .navbar-brand {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px 20px; 
+    // * above will move the position of green circle within its navbar div *
+    font-size: 40;
+    // max-width: 1000px;
+    justify-content: space-between;
+    .title {
+      all: unset;
+      margin-left: 25px;
+      width: 20px;
+      height: 20px;
+      background-color: $brand-green;
+      color:$brand-green;
+      border-radius: 50%;
+      border: none;
+    }
+    .title:hover {
+      margin-left: 25px;
+      width: 20px;
+      height: 20px;
+      background-color: $brand-green;
+      color:$brand-green;
+      border-radius: 50%;
+    }
+  }
+  .navbar-item {
+    all: unset;
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px 20px;
+    font-size: 40;
+    max-width: 1000px;
+
+    // .nav-button {
+    //   padding: 10px;
+    // }
+  }
+  .nav-button {
+    all: unset;
+    color: $brand-green;
+  }
+
+  .is-active {
+    padding: 4px;
+    width: 100%;
+    margin: -5px;
+  }
+
+  .nav-button:hover {
+    all: unset;
+    display: flex;
+    align-items: center;
+    // margin: 0 20px 0 20px;
+    font-size: 40;
+    max-width: 1000px;
+    border-bottom: 1px solid;
+    color: $brand-green;
+    padding-bottom: -50px;
+  }
+
+  .navbar-burger {
+    max-width: 40px;
+    align-items: right;
+  }
+  .navbar-burger-is-active {
+    max-width: 40px;
+    align-items: right;
+    display: flex;
+  }
+  .navbar-menu {
+    .is-active {
+      margin: -5px;
+      height: 100%;
+    }
+  }
+}
